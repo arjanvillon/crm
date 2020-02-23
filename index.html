@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+  <meta charset="utf-8" />
+  <title>1Devs  |  Login</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="description" />
+  <meta content="" name="author" />
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/metro.css" rel="stylesheet" />
+  <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="loader.css" />
+<link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/style_responsive.css" rel="stylesheet" />
+  <link href="assets/css/style_default.css" rel="stylesheet" id="style_color" />
+  <link rel="stylesheet" type="text/css" href="assets/uniform/css/uniform.default.css" />
+  <link rel="shortcut icon" href="assets/img/LOGO.png" />
+  <link rel="stylesheet" type="text/css" href="me_login.css" />
+  <link rel="stylesheet" type="text/css" href="scroll.css" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body>
+<div class="loader">
+	<div class="preload">
+			<div class="logo">
+				1Devs<span style="color: red;"> Inc.</span>
+			</div>
+			<div class="loader-frame">
+				<div class="loader1" id="loader1"></div>
+				<div class="loader2" id="loader2"></div>
+			</div>
+		</div>	
+</div>
+    <!-- BEGIN LOGIN FORM -->
+
+    
+    
+      <div class="box"> 
+      <center style="font-size:18px;"> 1DEV<span style="color: red">S INC.</span>
+ </center>
+      <h3>Login to your account</h3><br>
+		<form id="login_validate" action="login1.php" method="post">
+			<div>
+			 <input minlength="5" maxlength="30" id="uname" class="m-wrap placeholder-no-fix" type="text" name="uname" required />
+			<label for="uname">Username</label>
+			</div>
+			<div>
+			<input class="m-wrap placeholder-no-fix" type="email" name="emailp" required/>
+			<label>Email</label>
+			</div>
+			<div>
+			<div class="input_icon">
+			<input id="psw" class="m-wrap placeholder-no-fix" type="password" name="psw" required/>
+			<label>Password </label>
+			<i id="pswd" onClick="func()" class="icon-eye-open" style="color: #999;cursor: pointer"></i>
+			</div>
+			</div>
+	
+			<hr>
+			<input type="submit" class="btn green pull-right" name="UserLogin123" value="Login">
+		
+			
+		</form>
+		<br>
+		<div class="create-account">
+        <p>
+          Don't have an account yet ?&nbsp; 
+          <a href="sign_up.php" id="register-btn" class="">Create an account</a>
+        </p>
+         <p>
+        	 <a href="forgot_password.php" class="">Forgot Password ?
+         </a>
+        </p>
+      </div>
+		
+		</div>
+
+      
+    <!-- END LOGIN FORM -->        
+
+  <!-- BEGIN COPYRIGHT -->
+  <!-- END COPYRIGHT -->
+  <!-- BEGIN JAVASCRIPTS -->
+  <script src="assets/js/jquery-1.8.3.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  
+  <script src="assets/uniform/jquery.uniform.min.js"></script> 
+  <script src="assets/js/jquery.blockui.js"></script>
+  <script type="text/javascript" src="assets/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="assets/js/app.js"></script>
+
+<script>
+$().ready(function() {
+	$("#login_validate").validate();
+});
+</script> 
+  <script>	  
+	var a = document.getElementById("psw");
+	  function func(){
+		  if(a.type == "password"){
+			  a.type = "text";
+		  }
+		  else {
+			  a.type = "password";
+		  }
+	  }
+  </script>
+   <script>
+    jQuery(document).ready(function() {      
+      App.initLogin();
+    });
+  </script>
+  <script>
+	$(window).load(function(){
+		$(".loader").fadeOut();
+	});
+	</script>
+  <!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

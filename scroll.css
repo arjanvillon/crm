@@ -1,0 +1,128 @@
+		
+.breadcrumb a:hover{
+		color: red;
+	}
+	
+		input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+	}
+
+
+
+	
+.scrollspy-example {
+    position: relative;
+    height: 380px;
+    margin-top: .5rem;
+    overflow: hidden;
+}
+.scrollspy-example:hover{
+		overflow-y: auto;
+	}
+	
+
+
+
+:root {
+	--scroll-bar-size: 10px;
+
+	/**
+   * Background color for custom scroll bars.
+   * The color is applied to the thumb part of the scrollbar.
+   */
+	--scroll-bar-thumb-background-color: rgba(0, 0, 0, 0.2);
+	/**
+	* Background color for custom scroll bars in their active state.
+	* The color is applied to the thumb part of the scrollbar.
+	*/
+	--scroll-bar-thumb-background-color-active: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar {
+	width: var(--scroll-bar-size);
+	height: var(--scroll-bar-size);
+	background: transparent;
+	cursor: pointer;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--scroll-bar-thumb-background-color);
+	border-radius: var(--scroll-bar-size);
+	border-color: transparent;
+	border-style: solid;
+	border-width: calc(var(--scroll-bar-size)/3);
+	background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:active {
+	background-color: var(--scroll-bar-thumb-background-color-active);
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+	border-width: 1px;
+	background-color: var(--scroll-bar-thumb-background-color-active);
+	cursor: pointer;
+}
+ [type="datetime-local"] {
+
+  background:#fff url(assets/img/calendar_2.png)97% 50% no-repeat ;
+}
+[type="datetime-local"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+[type="date"] {
+
+  background:#fff url(assets/img/calendar_2.png)97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+	
+input[type="date"] {
+  border: 1px solid #c4c4c4;
+  background-color: #fff;
+  padding: 4px 5px;
+}
+
+
+.error{
+  color: #cc0033;
+  font-weight: 500;
+  font-size: 14px;
+  padding-left: 2%;
+ 
+  margin: 10px 0 0;
+
+	
+}
+		input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+	}
+
+th{/*for table resizable*/
+	resize:horizontal;
+	overflow:auto;
+	cursor: w-resize;
+}
+a, h4{
+	color:black;
+	font-weight: 600;
+}
+a:hover, h4:hover {
+	color: red;
+}
+table {
+	font-size: 14px;
+}
+.after {
+	
+}
