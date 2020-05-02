@@ -5,7 +5,7 @@
 
 ## Developers
 Abarca, Nikki G. \
-Villon, Arjan Heaven E. \
+Villon, Arjan Heaven E. 
 
 Special Thanks to our Supervisor: \
 Mr. Timothy Gaius Dungao
